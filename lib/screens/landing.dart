@@ -8,7 +8,7 @@ class LandingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bool isLoggedIn = true;
+    final bool isLoggedIn = false;
     return isLoggedIn ? HomePage() : AuthorizationPage();
   }
 }

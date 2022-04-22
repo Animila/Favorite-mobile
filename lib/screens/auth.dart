@@ -156,8 +156,8 @@ class _AuthorizationPageState extends State<AuthorizationPage> {
 
       _emailController.clear();
       _passController.clear();
-      Navigator.push(context,
-          MaterialPageRoute(builder: (context) => AuthorizationPage()));
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => HomePage()));
     }
 
     return MaterialApp(
