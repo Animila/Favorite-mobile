@@ -1,5 +1,5 @@
 //подключаем концепцию/подход UI
-import 'package:favorite/screens/startupScreen.dart';
+import 'package:favorite/screens/landing.dart';
 import 'package:flutter/material.dart';
 
 //точка входа в приложение (базовый скелет)
@@ -16,6 +16,6 @@ class FavoruteApp extends StatelessWidget {
           primaryColor: Color.fromRGBO(225, 176, 48, 1),
           textTheme: TextTheme(titleMedium: TextStyle(color: Colors.white)),
         ),
-        home: StartPage());
+        home: LandingPage());
   }
 }
