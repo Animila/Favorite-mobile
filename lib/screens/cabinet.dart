@@ -1,4 +1,5 @@
 import 'package:favorite/screens/home.dart';
+import 'package:favorite/screens/info.dart';
 import 'package:flutter/material.dart';
 
 class CabinetPage extends StatelessWidget {
@@ -12,7 +13,7 @@ class CabinetPage extends StatelessWidget {
         child: Column(
           children: [
             const Padding(
-              padding: EdgeInsets.only(top: 50),
+              padding: EdgeInsets.only(top: 20),
               child: Image(
                   image: AssetImage('assets/images/photo_default_student.png')),
             ),
@@ -313,6 +314,23 @@ class CabinetPage extends StatelessWidget {
         primaryColor: Color.fromRGBO(225, 176, 48, 1),
       ),
       home: Scaffold(
+        appBar: AppBar(
+          title: Text('Кабинет'),
+          backgroundColor: Color.fromRGBO(219, 51, 51, 1),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.support),
+            ),
+            IconButton(
+              onPressed: () => {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => InfoPage()))
+              },
+              icon: Icon(Icons.info),
+            ),
+          ],
+        ),
         backgroundColor: Color.fromRGBO(225, 176, 48, 1),
         body: SingleChildScrollView(
           child: Column(
