@@ -1,6 +1,6 @@
 import 'package:favorite/main.dart';
-import 'package:favorite/screens/cabinet.dart';
-import 'package:favorite/screens/home.dart';
+import 'package:favorite/screens/main_page/cabinet.dart';
+import 'package:favorite/screens/main_page/home.dart';
 import 'package:flutter/material.dart';
 
 // определение страницы авторизации
