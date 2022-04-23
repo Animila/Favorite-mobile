@@ -1,5 +1,7 @@
 import 'package:favorite/screens/cabinet.dart';
 import 'package:favorite/screens/example.dart';
+import 'package:favorite/screens/info.dart';
+import 'package:favorite/screens/schedule.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -12,7 +14,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int index = 1;
 
-  List<Widget> widgetList = const [ExamplesTest(), CabinetPage()];
+  List<Widget> widgetList = const [
+    ExamplesTest(),
+    CabinetPage(),
+    SchedulePage()
+  ];
 
   @override
   Widget build(BuildContext context) {
